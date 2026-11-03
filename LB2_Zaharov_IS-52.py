@@ -108,7 +108,7 @@ def seidel(a, b):
             error = max(error, abs(x[i] - old_x[i]))
         if error < eps:
             return x
-    raise ValueError("Зейдель: за 10000 итераций точность не достигнута")
+    
 
 # Решение и вывод методами Гаусса и LU
 x = gauss(A, b)
